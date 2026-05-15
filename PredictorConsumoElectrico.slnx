@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="PredictorConsumoElectrico.Core/PredictorConsumoElectrico.Core.csproj" />
+  <Project Path="PredictorConsumoElectrico/PredictorConsumoElectrico.csproj" />
+</Solution>

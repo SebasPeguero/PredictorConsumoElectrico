@@ -1,0 +1,147 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px; /* <--- Este es el gran culpable */
+}
+
+.footer {
+    position: absolute; /* <--- Y este también */
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
+
+/* ==========================================================================
+   Material Design 3 - Custom Colors & Utilities para Predictor Mod
+   ========================================================================== */
+
+:root {
+    /* Paleta principal (Azules y grises azulados) */
+    --md-sys-color-primary: #005ac1;
+    --md-sys-color-primary-container: #d8e2ff;
+    --md-sys-color-on-primary-container: #001a41;
+    /* Superficies y fondos */
+    --md-sys-color-surface: #fdfbff;
+    --md-sys-color-on-surface: #1a1b1e;
+    --md-sys-color-on-surface-variant: #44474e;
+    --md-sys-color-surface-container-lowest: #ffffff;
+    --md-sys-color-surface-container-low: #f3f3f7;
+    --md-sys-color-surface-container: #ededf1;
+    /* Bordes y outlines */
+    --md-sys-color-outline: #74777f;
+    --md-sys-color-outline-variant: #c4c6d0;
+    /* Estados (Éxito, Error) */
+    --md-sys-color-success: #146c2e;
+    --md-sys-color-success-container: #a3f5aa;
+    --md-sys-color-error: #ba1a1a;
+    --md-sys-color-error-container: #ffdad6;
+}
+
+/* Tipografía Base */
+body {
+    background-color: var(--md-sys-color-surface-container-low) !important;
+    color: var(--md-sys-color-on-surface);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Clases de texto */
+.text-on-surface {
+    color: var(--md-sys-color-on-surface) !important;
+}
+
+.text-on-surface-variant {
+    color: var(--md-sys-color-on-surface-variant) !important;
+}
+
+.text-primary {
+    color: var(--md-sys-color-primary) !important;
+}
+
+.text-error {
+    color: var(--md-sys-color-error) !important;
+}
+
+/* Clases de fondos */
+.bg-surface-container-lowest {
+    background-color: var(--md-sys-color-surface-container-lowest) !important;
+}
+
+.bg-surface-container-low {
+    background-color: var(--md-sys-color-surface-container-low) !important;
+}
+
+.bg-surface-container {
+    background-color: var(--md-sys-color-surface-container) !important;
+}
+
+.bg-primary-container {
+    background-color: var(--md-sys-color-primary-container) !important;
+}
+
+.bg-success-container {
+    background-color: var(--md-sys-color-success-container) !important;
+}
+
+.bg-error-container {
+    background-color: var(--md-sys-color-error-container) !important;
+}
+
+/* Bordes personalizados */
+.border-outline-variant {
+    border-color: var(--md-sys-color-outline-variant) !important;
+}
+
+.border-primary {
+    border-color: var(--md-sys-color-primary) !important;
+}
+
+/* Ajustes a elementos de Bootstrap para que coincidan con el diseño */
+.card {
+    background-color: var(--md-sys-color-surface-container-lowest);
+    transition: all 0.2s ease-in-out;
+}
+
+.form-control, .form-select {
+    border-color: var(--md-sys-color-outline-variant);
+    background-color: var(--md-sys-color-surface-container-lowest);
+}
+
+    .form-control:focus, .form-select:focus {
+        border-color: var(--md-sys-color-primary);
+        box-shadow: 0 0 0 0.25rem rgba(0, 90, 193, 0.25);
+    }
+
+/* Ajustes visuales para los inputs (Grid) */
+.input-group-text {
+    background-color: var(--md-sys-color-surface-container);
+    border-color: var(--md-sys-color-outline-variant);
+}
+
+.btn-primary {
+    background-color: var(--md-sys-color-primary);
+    border-color: var(--md-sys-color-primary);
+}
+
+    .btn-primary:hover {
+        background-color: #004ba0;
+    }
+
+/* Refinamiento del Navbar */
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+}

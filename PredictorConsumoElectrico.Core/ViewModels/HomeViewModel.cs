@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
-namespace PredictorConsumoElectrico.ViewModels
+using System.ComponentModel.DataAnnotations;
+namespace PredictorConsumoElectrico.Core.ViewModels
 {
     public class HomeViewModel
     {

@@ -3,8 +3,7 @@ using PredictorConsumoElectrico.Core.DTOs;
 using PredictorConsumoElectrico.Core.Interfaces;
 using PredictorConsumoElectrico.Core.Services;
 using PredictorConsumoElectrico.Infrastructure;
-using PredictorConsumoElectrico.Models;
-using PredictorConsumoElectrico.ViewModels;
+using PredictorConsumoElectrico.Core.ViewModels;
 using System.Diagnostics;
 
 namespace PredictorConsumoElectrico.Controllers

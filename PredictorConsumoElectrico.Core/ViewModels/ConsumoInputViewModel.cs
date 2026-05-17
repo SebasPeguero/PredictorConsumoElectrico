@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace PredictorConsumoElectrico.ViewModels
+namespace PredictorConsumoElectrico.Core.ViewModels
 {
     public class ConsumoInputViewModel
     {

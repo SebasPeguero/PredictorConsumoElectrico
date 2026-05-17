@@ -1,4 +1,6 @@
-namespace PredictorConsumoElectrico.Models
+using System.ComponentModel.DataAnnotations;
+
+namespace PredictorConsumoElectrico.Core.ViewModels
 {
     public class ErrorViewModel
     {
